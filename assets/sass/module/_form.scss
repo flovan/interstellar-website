@@ -1,0 +1,113 @@
+// Form Module ----------------------------------------------------------------
+
+fieldset,
+label {
+	margin: 0 0 rem($base-font-size);
+	padding: 0;
+
+	&:last-of-type,
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+fieldset {
+	@extend %is-cf;
+	padding-top: 2em;
+	border: none;
+	border-top: 1px solid tint($body-color, 90);
+
+	legend {
+		display: block;
+		padding: 0 1em;
+		margin-left: 1em;
+		font-size: em(12);
+		text-align: left;
+		@extend %is-uppercase;
+		color: tint($body-color, 50);
+	}
+}
+
+label {
+	display: block;
+
+	&:not(:last-child) {
+		margin-bottom: 1.5em;
+	}
+
+	span {
+		font-size: em(14);
+		color: tint($body-color, 50);
+
+		&:first-child {
+			display: block;
+		}
+
+		&:last-child {
+			display: inline-block;
+			margin-left: 1em;
+		}
+	}
+
+	input:last-child,
+	textarea:last-child,
+	select:last-child {
+		margin-top: .5em;
+	}
+}
+
+// NOTE
+// 
+// This selector will affect <input type="submit"> elements.
+// Please use <button type="submit"></button> instead, unless
+// you aren't planning on using any HTML5 input types
+
+input,
+textarea,
+select {
+	width: 100%;
+
+	/* &:focus {
+		outline: none;
+	} */
+}
+
+input,
+textarea {
+	padding: rem(10) rem(20) rem(8);
+	border: 1px solid tint($body-color, 90);
+	background: $white;
+	font-family: $font-stack;
+	color: $black;
+	line-height: 1.5;
+	@extend %is-antialiased;
+	
+	&:focus {
+		background-color: transparent;
+	}
+
+	&[disabled] {
+		opacity: .5;
+	}
+}
+
+input {
+	&[type=checkbox],
+	&[type=radio] {
+		display: inline-block;
+		width: auto;
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+// Style placeholder text
+// Includes class that the IE shim generates
+::placeholder,
+::-moz-placeholder,
+::-webkit-placeholder,
+.-placeholder {
+	color: #888;
+}

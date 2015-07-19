@@ -1,0 +1,75 @@
+{{> layout/layout-top}}
+	{{> partials/svg}}
+	
+	<main class="wrapper">
+		<header class="mb-large">
+			<h1 class="header__title mb-large"><a href="index.html" class="header__logo">
+				<svg class="logo__icon por" role="presentation"><use xlink:href="#logo-icon"></use></svg>
+				<svg class="logo__text por" role="img" title="Interstellar"><use xlink:href="#logo-text"></use></svg>
+			</a></h1>
+			<p class="header__intro">A series of Sublime Text 3 themes inspired by a journey into outerspace.<br>
+			Let your code be illuminated by the shimmer of a planet.</p>
+		</header>
+		<article class="demo mb-large">
+			<header class="demo__header por">
+				<nav class="demo__nav cf" role="navigation" aria-label="Planet navigation">
+					<button class="nav__button nav__prev button button--tab">
+						<svg role="img" title="Visit the previous planet">
+							<use xlink:href="#arrow-left"></use>
+						</svg>
+					</button>
+					<button class="nav__button nav__next button button--tab">
+						<svg role="img" title="Visit the next planet">
+							<use xlink:href="#arrow-right"></use>
+						</svg>
+					</button>
+					<!-- -->
+					<button class="button button--tab button--grad is-active" data-bg-color="#211109" data-id="sun">Sun</button>
+					<button class="button button--tab button--grad" data-bg-color="#080C26" data-id="mercury">Mercury</button>
+					<button class="button button--tab button--grad" data-bg-color="#3E1B00" data-id="venus">Venus</button>
+					<button class="button button--tab button--grad" data-bg-color="#16153D" data-id="earth">Earth</button>
+					<button class="button button--tab button--grad" data-bg-color="#232323" data-id="moon">Moon</button>
+					<button class="button button--tab button--grad" data-bg-color="#4F4A44" data-id="mars">Mars</button>
+					<button class="button button--tab button--grad" data-bg-color="#131210" data-id="jupiter">Jupiter</button>
+					<button class="button button--tab button--grad" data-bg-color="#23201B" data-id="saturn">Saturn</button>
+					<button class="button button--tab button--grad" data-bg-color="#202b2d" data-id="uranus">Uranus</button>
+					<button class="button button--tab button--grad" data-bg-color="#0b0d24" data-id="neptune">Neptune</button>
+					<button class="button button--tab button--grad" data-bg-color="#180e04" data-id="pluto">Pluto</button>
+				</nav>
+			</header>
+			<pre class="demo__editor code-block"><code id="code-target"></code></pre>
+			<footer class="demo__footer">
+				<select name="lang-toggle" id="lang-toggle">
+					<option value="html" selected>HTML</option>
+					<option value="css">CSS</option>
+					<option value="javascript">Javascript</option>
+					<option value="coffeescript">Coffeescript</option>
+					<option value="php">PHP</option>
+					<option value="python">Python</option>
+					<option value="ruby">Ruby</option>
+				</select>
+			</footer>
+		</article>
+		<article class="installation read-content mb-large">
+			<h2 id="install">Installing Interstellar</h2>
+			<h3>Via Package Control</h3>
+			<p>Theme is listed as <code class="plain-code">Theme - Interstellar</code> in Will Bond's <a href="https://sublime.wbond.net">Sublime Package Control</a>.</p>
+			<h3>Manual</h3>
+			<ol>
+				<li><a href="https://github.com/flovan/interstellar-package/archive/master.zip">Download and unzip the repo</a></li>
+				<li>Copy the folder into Packages directory, which you can find using the menu item <code class="plain-code">Preferences -> Browse Packages...</code> in Sublime Text</li>
+			</ol>
+			<h2>Setup</h2>
+			<p>Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item <code class="plain-code">Preferences -> Settings - User</code> in Sublime Text.</p>
+			<h3>Example settings:</h3>
+			<pre class="plain-code code-block"><code>{
+  "theme": "Interstellar.sublime-theme",
+  "color_scheme": "Packages/interstellar-package/Moon.tmTheme"
+}</code></pre>
+		</article>
+		<footer class="c-grey">
+			<p><a class="c-grey" href="http://github.com/flovan/interstellar-theme">Visit the Github project</a>.</p>
+		</footer>
+	</main>
+
+{{> layout/layout-bottom}}

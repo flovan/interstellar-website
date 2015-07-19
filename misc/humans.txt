@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Florian -- @prplps -- http://flovan.me
+
+# THANKS
+
+    Myself
+
+# TECHNOLOGY COLOPHON
+
+    Apache Server Configs
+    HTML5, CSS3
+    Sass, Normalize.css
+    Ender, Respond, Fastclick, Underscore, Console-shim, ie-behavior, html5shiv
+    Headstart.io
